@@ -4,7 +4,7 @@ document.getElementById('registerForm').addEventListener('submit', async (event)
     const username = document.getElementById('regUsername').value;
     const password = document.getElementById('regPassword').value;
 
-    const response = await fetch('http://localhost:5000/register', {
+    const response = await fetch('https://pr3back.onrender.com/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
